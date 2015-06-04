@@ -1,6 +1,6 @@
 {
   "name": "credit-card",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Make your credit card form better in one line of code.",
   "directories": {
     "doc": "doc",
@@ -21,7 +21,6 @@
     "broccoli-asset-rev": "^2.0.2",
     "ember-cli": "0.2.7",
     "ember-cli-app-version": "0.3.3",
-    "ember-cli-content-security-policy": "0.4.0",
     "ember-cli-dependency-checker": "^1.0.0",
     "ember-cli-htmlbars": "0.7.6",
     "ember-cli-ic-ajax": "0.1.1",
@@ -40,6 +39,7 @@
     "cards"
   ],
   "dependencies": {
+    "ember-cli-htmlbars": "0.7.6",
     "ember-cli-babel": "^5.0.0"
   },
   "ember-addon": {
