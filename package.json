@@ -1,7 +1,7 @@
 {
   "name": "credit-card",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Make your credit card form better in one line of code.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -35,7 +35,9 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "credit-card",
+    "cards"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"
