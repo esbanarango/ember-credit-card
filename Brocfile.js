@@ -13,4 +13,6 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 var app = new EmberAddon();
 
+app.import('bower_components/card/lib/js/card.js');
+
 module.exports = app.toTree();

@@ -11,5 +11,8 @@
     "jquery": "^1.11.1",
     "loader.js": "ember-cli/loader.js#3.2.0",
     "card": "~1.0.0"
+  },
+  "devDependencies": {
+    "card": "~1.0.0"
   }
 }
