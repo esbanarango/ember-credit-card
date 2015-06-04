@@ -3,10 +3,7 @@
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
-
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`npm install --save-dev ember-credit-card` and `ember g ember-credit-card`
 
 ## Running
 
