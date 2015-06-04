@@ -1,1 +1,11 @@
-{{yield}}
+<div class='card-wrapper'></div>
+{{#if template}}
+  {{yield}}
+{{else}}
+	<form id="ember-credit-card-form">
+		{{input type="text" name="number" value=number}}
+		{{input type="text" name="name" value=name}}
+		{{input type="text" name="expiry" value=expiry}}
+		{{input type="text" name="cvc" value=cvc}}
+	</form>
+{{/if}}
