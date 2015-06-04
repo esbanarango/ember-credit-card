@@ -9,9 +9,7 @@
     "ember-mocha": "~0.7.0",
     "ember-resolver": "~0.1.15",
     "jquery": "^1.11.1",
-    "loader.js": "ember-cli/loader.js#3.2.0"
-  },
-  "devDependencies": {
+    "loader.js": "ember-cli/loader.js#3.2.0",
     "card": "~1.0.0"
   }
 }
