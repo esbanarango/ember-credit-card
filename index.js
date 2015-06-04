@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'credit-card',
+  name: 'ember-credit-card',
   included: function(app) {
     this._super.included(app);
 

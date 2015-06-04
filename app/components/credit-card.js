@@ -1,1 +1,1 @@
-export { default } from 'credit-card/components/credit-card';
+export { default } from 'ember-credit-card/components/credit-card';
