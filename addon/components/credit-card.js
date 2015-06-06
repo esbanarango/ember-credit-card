@@ -30,6 +30,29 @@ export default Ember.Component.extend({
    */
 	cardContainer: '.card-wrapper',
 
+  /**
+   *
+	 *
+   */
+	formSelectors: {
+    numberInput: 'input[name="number"]',
+    expiryInput: 'input[name="expiry"]',
+    cvcInput: 'input[name="cvc"]',
+    nameInput: 'input[name="name"]'
+	},
+
+  values: {
+    number: '•••• •••• •••• ••••',
+    name: 'Full Name',
+    expiry: '••/••',
+    cvc: '•••'
+  },
+
+	messages: {
+    validDate: 'valid\nthru',
+    monthYear: 'month/year',
+	},
+
 	width: 350,
 
 	formatting: true,
@@ -39,35 +62,23 @@ export default Ember.Component.extend({
   setupCard: Ember.on('didInsertElement', function() {
   	var _this = this,
   			card = new Card({
+
   				form: _this.get('form'),
+
 			    container: _this.get('cardContainer'),
 
-			    // formSelectors: {
-			    //     numberInput: 'input#number', // optional — default input[name="number"]
-			    //     expiryInput: 'input#expiry', // optional — default input[name="expiry"]
-			    //     cvcInput: 'input#cvc', // optional — default input[name="cvc"]
-			    //     nameInput: 'input#name' // optional - defaults input[name="name"]
-			    // },
+			    formSelectors: _this.get('formSelectors'),
 
 			    width: _this.get('width'), // optional — default 350px
+
 			    formatting: _this.get('formatting'), // optional - default true
 
-			    // Strings for translation - optional
-			    // messages: {
-		     //    validDate: 'valid\ndate', // optional - default 'valid\nthru'
-		     //    monthYear: 'mm/yyyy', // optional - default 'month/year'
-			    // },
+			    messages: _this.get('messages'),
 
-			    // Default values for rendered fields - optional
-			    values: {
-		        number: '•••• •••• •••• ••••',
-		        name: 'Full Name',
-		        expiry: '••/••',
-		        cvc: '•••'
-			    },
+			    values: _this.get('values'),
 
 			    // if true, will log helpful messages for setting up Card
-			    debug: _this.get('debug') // optional - default false
+			    debug: _this.get('debug')
 				});
 		this.set('card',card);
   })

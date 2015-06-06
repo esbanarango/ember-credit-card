@@ -1,14 +1,29 @@
-# Credit-card
+# Ember Credit card
 
-This README outlines the details of collaborating on this Ember addon.
+This is an Ember wrapper for the amazin [Card](https://github.com/jessepollak/card) project.
 
 ## Installation
 `npm install --save-dev ember-credit-card` and `ember g ember-credit-card`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+![card](http://i.imgur.com/qG3TenO.gif)
+
+````html
+{{credit-card}}
+````
+
+##### Default
+
+---
+
+##### Specifying settings
+
+---
+
+##### With template
+
+---
 
 ## Running Tests
 
