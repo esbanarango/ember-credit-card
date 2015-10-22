@@ -1,14 +1,14 @@
 {
   "name": "ember-credit-card",
   "version": "1.0.0",
-  "description": "Make your credit card form better in one line of code.",
+  "description": "Make your credit card form better with one line of code.",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "scripts": {
-    "start": "ember server",
     "build": "ember build",
+    "start": "ember server",
     "test": "ember try:testall"
   },
   "repository": "https://github.com/esbanarango/ember-credit-card",
@@ -18,18 +18,21 @@
   "author": "Esteban Arango Medina",
   "license": "MIT",
   "devDependencies": {
-    "broccoli-asset-rev": "^2.0.2",
-    "ember-cli": "0.2.7",
-    "ember-cli-app-version": "0.3.3",
-    "ember-cli-dependency-checker": "^1.0.0",
+    "broccoli-asset-rev": "^2.1.2",
+    "ember-cli": "1.13.8",
+    "ember-cli-app-version": "0.5.0",
+    "ember-cli-dependency-checker": "^1.0.1",
     "ember-cli-htmlbars": "0.7.9",
-    "ember-cli-ic-ajax": "0.1.1",
-    "ember-cli-inject-live-reload": "^1.3.0",
+    "ember-cli-htmlbars-inline-precompile": "^0.2.0",
+    "ember-cli-ic-ajax": "0.2.1",
+    "ember-cli-inject-live-reload": "^1.3.1",
     "ember-cli-mocha": "^0.6.1",
-    "ember-cli-uglify": "^1.0.1",
-    "ember-data": "1.0.0-beta.18",
+    "ember-cli-release": "0.2.3",
+    "ember-cli-sri": "^1.0.3",
+    "ember-cli-uglify": "^1.2.0",
+    "ember-data": "1.13.8",
     "ember-disable-proxy-controllers": "^1.0.0",
-    "ember-export-application-global": "^1.0.2",
+    "ember-export-application-global": "^1.0.3",
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-try": "0.0.6"
   },
@@ -40,7 +43,7 @@
   ],
   "dependencies": {
     "ember-cli-htmlbars": "0.7.9",
-    "ember-cli-babel": "^5.0.0"
+    "ember-cli-babel": "^5.1.3"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

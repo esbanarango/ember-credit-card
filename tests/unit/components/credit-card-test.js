@@ -52,7 +52,6 @@ describeComponent(
       component.set('values',{number:'nuuuumber'});
       this.render();
       card = component.get('card');
-      console.log(card);
       expect(card.options.values.number).to.equal('nuuuumber');
 
     });
