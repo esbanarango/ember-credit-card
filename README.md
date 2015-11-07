@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/esbanarango/ember-credit-card.svg)](https://travis-ci.org/esbanarango/ember-credit-card) [![npm version](https://badge.fury.io/js/ember-credit-card.svg)](http://badge.fury.io/js/ember-credit-card) [![Ember Observer Score](http://emberobserver.com/badges/ember-credit-card.svg)](http://emberobserver.com/addons/ember-credit-card)
 
-This is an Ember wrapper for the amazin [Card](https://github.com/jessepollak/card) project.
+This is an Ember wrapper for the amazing [Card](https://github.com/jessepollak/card) project.
 
 ## Installation
 `npm install --save-dev ember-credit-card` and `ember g ember-credit-card`
