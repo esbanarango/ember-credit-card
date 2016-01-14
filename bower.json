@@ -8,7 +8,7 @@
     "ember-load-initializers": "ember-cli/ember-load-initializers#0.1.5",
     "ember-mocha": "0.8.5",
     "ember-resolver": "~0.1.18",
-    "jquery": "^1.11.3",
+    "jquery": "1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
     "card": "~1.0.0"
   },
