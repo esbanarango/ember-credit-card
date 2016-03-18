@@ -83,6 +83,7 @@ Support this project and [others by esbanarango][gratipay-esbanarango] via [grat
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
