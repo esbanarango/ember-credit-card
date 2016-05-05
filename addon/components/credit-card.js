@@ -13,6 +13,7 @@ import layout from '../templates/components/credit-card';
 
 export default Ember.Component.extend({
   layout: layout,
+  showCard: true,
   card: null,
  	/**********************************
    * Optional attributes
