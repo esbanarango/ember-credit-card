@@ -22,10 +22,10 @@ By simply adding `{{credit-card}}` you will get the basic form.
 <div class='card-wrapper'></div>
 <br/>
 <form id="ember-credit-card-form">
-	{{input type="text" name="number" value=number placeholder='Credit Card Number'}}
-	{{input type="text" name="name" value=name placeholder='Name on Credit Card'}}
-	{{input type="text" name="expiry" value=expiry}}
-	{{input type="text" name="cvc" value=cvc}}
+  {{input type="text" name="number" value=number placeholder='Credit Card Number'}}
+  {{input type="text" name="name" value=name placeholder='Name on Credit Card'}}
+  {{input type="text" name="expiry" value=expiry}}
+  {{input type="text" name="cvc" value=cvc}}
 </form>
 ````
 
@@ -33,11 +33,11 @@ By simply adding `{{credit-card}}` you will get the basic form.
 You can also specify all the settings that [Card](https://github.com/jessepollak/card/blob/master/lib/js/card.js#L1136) supports.
 
 ````html
-{{	credit-card
-	form='#my-form'
-	values=cardValues
-	width=150
-	formatting=false
+{{  credit-card
+  form='#my-form'
+  values=cardValues
+  width=150
+  formatting=false
 }}
 ````
 
@@ -47,28 +47,28 @@ The default form and inputs used by default are so simple, so you can pass a tem
 
 ````html
 {{#credit-card form="#my-form"}}
-	<form id='my-form' class='payment-info'>
-		<div class="ui input">
+  <form id='my-form' class='payment-info'>
+    <div class="ui input">
       <label>Credit Card Number:</label>
-			{{input type="text" value=creditCard.number name='number' placeholder='Credit Card Number'}}
+      {{input type="text" value=creditCard.number name='number' placeholder='Credit Card Number'}}
     </div>
 
-		<div class="ui input">
+    <div class="ui input">
       <label>Name on Credit Card:</label>
-			{{input type="text" value=creditCard.name name='name' placeholder='Name on Credit Card'}}
+      {{input type="text" value=creditCard.name name='name' placeholder='Name on Credit Card'}}
     </div>
 
-		<div class="ui input">
+    <div class="ui input">
       <label>Expiration:</label>
-			{{input type="text" name='expiry' value=creditCard.expiration placeholder='MM/YY'}}
+      {{input type="text" name='expiry' value=creditCard.expiration placeholder='MM/YY'}}
     </div>
 
-		<div class="ui input">
+    <div class="ui input">
       <label>CVC:</label>
-			{{input type="text" name='cvc' value=creditCard.cvc placeholder='CVC'}}
+      {{input type="text" name='cvc' value=creditCard.cvc placeholder='CVC'}}
     </div>
 
-	</form>
+  </form>
 {{/credit-card}}
 
 ````
@@ -83,7 +83,7 @@ Support this project and [others by esbanarango][gratipay-esbanarango] via [grat
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
@@ -91,4 +91,4 @@ Support this project and [others by esbanarango][gratipay-esbanarango] via [grat
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
