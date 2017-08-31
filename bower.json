@@ -1,12 +1,1 @@
-{
-  "name": "ember-credit-card",
-  "dependencies": {
-    "card": "~1.2.1",
-    "mocha": "~2.2.4",
-    "chai": "~2.3.0",
-    "ember-mocha-adapter": "~0.3.1"
-  },
-  "devDependencies": {
-    "card": "~1.2.1"
-  }
-}
+
