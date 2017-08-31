@@ -25,14 +25,12 @@ matrix:
     - env: EMBER_TRY_SCENARIO=ember-canary
 
 before_install:
-  - npm install -g bower yarn phantomjs-prebuilt
+  - npm install -g yarn phantomjs-prebuilt
   - yarn --version
-  - bower --version
   - phantomjs --version
 
 install:
   - yarn install
-  - bower install
 
 script:
   # Usually, it's ok to finish the test scenario without reverting
