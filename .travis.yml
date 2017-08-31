@@ -5,13 +5,13 @@ node_js:
 
 sudo: false
 
+
 cache:
+  yarn: true
   directories:
-    - $HOME/.npm
-    - $HOME/.cache # includes bowers cache
+    - node_modules
 
 env:
-  # we recommend testing LTS's and latest stable release (bonus points to beta/canary)
   - EMBER_TRY_SCENARIO=ember-lts-2.4
   - EMBER_TRY_SCENARIO=ember-lts-2.8
   - EMBER_TRY_SCENARIO=ember-release
@@ -25,14 +25,12 @@ matrix:
     - env: EMBER_TRY_SCENARIO=ember-canary
 
 before_install:
-  - npm config set spin false
-  - npm install -g bower phantomjs-prebuilt
-  - bower --version
+  - npm install -g yarn phantomjs-prebuilt
+  - yarn --version
   - phantomjs --version
 
 install:
-  - npm install
-  - bower install
+  - yarn install
 
 script:
   # Usually, it's ok to finish the test scenario without reverting
