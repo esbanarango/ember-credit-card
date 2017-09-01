@@ -1,9 +1,9 @@
 /* eslint-env node */
 'use strict';
 
-var path = require('path');
-var Funnel = require('broccoli-funnel');
-var MergeTrees = require('broccoli-merge-trees');
+const path = require('path');
+const Funnel = require('broccoli-funnel');
+const MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-credit-card',
@@ -13,10 +13,18 @@ module.exports = {
   },
 
   treeForVendor(vendorTree) {
-    let momentTree = new Funnel(path.join(this.project.root, 'node_modules', 'card', 'dist'), {
-      files: ['card.js'],
-    });
+    let trees = [];
 
-    return new MergeTrees([vendorTree, momentTree]);
+    if (vendorTree) {
+      trees.push(vendorTree);
+    }
+
+    trees.push(
+      new Funnel(path.join(this.project.root, 'node_modules', 'card', 'dist'), {
+        files: ['card.js'],
+      })
+    );
+
+    return new MergeTrees(trees);
   },
 };
