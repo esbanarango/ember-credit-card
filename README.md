@@ -11,14 +11,14 @@ This is an Ember wrapper for the amazing [Card](https://github.com/jessepollak/c
 
 ![card](http://i.imgur.com/qG3TenO.gif)
 
-````html
+````handlebars
 {{credit-card}}
 ````
 
 ##### Default
 By simply adding `{{credit-card}}` you will get the basic form.
 
-````html
+````handlebars
 <div class='card-wrapper'></div>
 <br/>
 <form id="ember-credit-card-form">
@@ -32,7 +32,7 @@ By simply adding `{{credit-card}}` you will get the basic form.
 ##### Specifying settings
 You can also specify all the settings that [Card](https://github.com/jessepollak/card/blob/master/lib/js/card.js#L1136) supports.
 
-````html
+````handlebars
 {{  credit-card
   form='#my-form'
   values=cardValues
@@ -45,7 +45,7 @@ You can also specify all the settings that [Card](https://github.com/jessepollak
 The default form and inputs used by default are so simple, so you can pass a template to use your own styled inputs.
 > Remeber to either use the default name inputs or specify them on the `{{credit-card}}` arguments
 
-````html
+````handlebars
 {{#credit-card form="#my-form"}}
   <form id='my-form' class='payment-info'>
     <div class="ui input">
