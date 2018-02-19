@@ -1,5 +1,6 @@
+/* eslint-disable ember/avoid-leaking-state-in-ember-objects */
 /* global Card */
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from '../templates/components/credit-card';
 
 /**
@@ -11,7 +12,7 @@ import layout from '../templates/components/credit-card';
  * {{credit-card}}
  */
 
-export default Ember.Component.extend({
+export default Component.extend({
   layout: layout,
   showCard: true,
   card: null,
@@ -60,7 +61,13 @@ export default Ember.Component.extend({
 
   debug: false,
 
-  setupCard: Ember.on('didInsertElement', function() {
+  didInsertElement() {
+    this._super(...arguments);
+
+    this.setupCard();
+  },
+
+  setupCard() {
     var _this = this,
         card = new Card({
 
@@ -81,7 +88,6 @@ export default Ember.Component.extend({
           // if true, will log helpful messages for setting up Card
           debug: _this.get('debug')
         });
-    this.set('card',card);
-  })
-
+    this.set('card', card);
+  }
 });
