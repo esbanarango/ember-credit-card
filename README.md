@@ -73,14 +73,6 @@ The default form and inputs used by default are so simple, so you can pass a tem
 
 ````
 
-## Donating
-Support this project and [others by esbanarango][gratipay-esbanarango] via [gratipay][gratipay-esbanarango].
-
-[![Support via Gratipay][gratipay]][gratipay-esbanarango]
-
-[gratipay]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png
-[gratipay-esbanarango]: https://gratipay.com/esbanarango/
-
 ## Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
