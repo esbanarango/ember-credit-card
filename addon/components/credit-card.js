@@ -1,5 +1,5 @@
 /* global Card */
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from '../templates/components/credit-card';
 
 /**
@@ -11,7 +11,7 @@ import layout from '../templates/components/credit-card';
  * {{credit-card}}
  */
 
-export default Ember.Component.extend({
+export default Component.extend({
   layout: layout,
   showCard: true,
   card: null,
@@ -31,57 +31,45 @@ export default Ember.Component.extend({
    */
   cardContainer: '.card-wrapper',
 
-  /**
-   *
-   *
-   */
-  formSelectors: {
-    numberInput: 'input[name="number"]',
-    expiryInput: 'input[name="expiry"]',
-    cvcInput: 'input[name="cvc"]',
-    nameInput: 'input[name="name"]'
-  },
-
-  values: {
-    number: '•••• •••• •••• ••••',
-    name: 'Full Name',
-    expiry: '••/••',
-    cvc: '•••'
-  },
-
-  messages: {
-    validDate: 'valid\nthru',
-    monthYear: 'month/year',
-  },
-
   width: 350,
-
   formatting: true,
-
   debug: false,
 
-  setupCard: Ember.on('didInsertElement', function() {
-    var _this = this,
-        card = new Card({
+  init() {
+    this._super(...arguments);
+    this.formSelectors = {
+      numberInput: 'input[name="number"]',
+      expiryInput: 'input[name="expiry"]',
+      cvcInput: 'input[name="cvc"]',
+      nameInput: 'input[name="name"]'
+    },
 
-          form: _this.get('form'),
+    this.values = {
+      number: '•••• •••• •••• ••••',
+      name: 'Full Name',
+      expiry: '••/••',
+      cvc: '•••'
+    },
 
-          container: _this.get('cardContainer'),
+    this.messages = {
+      validDate: 'valid\nthru',
+      monthYear: 'month/year',
+    }
+  },
 
-          formSelectors: _this.get('formSelectors'),
-
-          width: _this.get('width'), // optional — default 350px
-
-          formatting: _this.get('formatting'), // optional - default true
-
-          messages: _this.get('messages'),
-
-          values: _this.get('values'),
-
-          // if true, will log helpful messages for setting up Card
-          debug: _this.get('debug')
-        });
+  didInsertElement() {
+    let _this = this;
+    let card = new Card({
+      form: _this.get('form'),
+      container: _this.get('cardContainer'),
+      formSelectors: _this.get('formSelectors'),
+      width: _this.get('width'), // optional — default 350px
+      formatting: _this.get('formatting'), // optional - default true
+      messages: _this.get('messages'),
+      values: _this.get('values'),
+      // if true, will log helpful messages for setting up Card
+      debug: _this.get('debug')
+    });
     this.set('card',card);
-  })
-
+  }
 });
