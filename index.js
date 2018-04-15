@@ -7,7 +7,7 @@ const MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-credit-card',
-  included: function(app) {
+  included: function() {
     this._super.included.apply(this, arguments);
     this.import('vendor/card.js');
   },
