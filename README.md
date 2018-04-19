@@ -5,7 +5,7 @@
 This is an Ember wrapper for the amazing [Card](https://github.com/jessepollak/card) project.
 
 ## Installation
-`ember install ember-credit-card` and `ember g ember-credit-card`
+`ember install ember-credit-card`
 
 ## Usage
 
