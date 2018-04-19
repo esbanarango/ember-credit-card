@@ -2402,9 +2402,9 @@ ember-mocha@^0.13.0:
     ember-cli-test-loader "^2.2.0"
     mocha "^2.5.3"
 
-ember-model-validator@^2.17.0:
-  version "2.17.0"
-  resolved "https://registry.yarnpkg.com/ember-model-validator/-/ember-model-validator-2.17.0.tgz#1435d9d1e5794c0c2a535beafdde73a12f78bc0c"
+ember-model-validator@^2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/ember-model-validator/-/ember-model-validator-2.18.0.tgz#423d43d71c519b09a364d6d37210a4008df48375"
   dependencies:
     ember-cli-babel "^6.6.0"
 
