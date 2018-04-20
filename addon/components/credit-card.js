@@ -37,24 +37,30 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.formSelectors = {
+    let defaultFormSelectors = {
       numberInput: 'input[name="number"]',
       expiryInput: 'input[name="expiry"]',
       cvcInput: 'input[name="cvc"]',
       nameInput: 'input[name="name"]'
-    },
+    };
 
-    this.values = {
+    let defaultPlaceholders = {
       number: '•••• •••• •••• ••••',
       name: 'Full Name',
       expiry: '••/••',
       cvc: '•••'
-    },
+    };
 
-    this.messages = {
+    let defaultMessages = {
       validDate: 'valid\nthru',
-      monthYear: 'month/year',
-    }
+      monthYear: 'month/year'
+    };
+    
+    this.setProperties({
+      formSelectors: Object.assign(defaultFormSelectors, this.get('formSelectors')),
+      placeholders: Object.assign(defaultPlaceholders, this.get('placeholders')),
+      messages: Object.assign(defaultMessages, this.get('messages'))
+    });
   },
 
   didInsertElement() {
@@ -65,7 +71,7 @@ export default Component.extend({
       formSelectors: _this.get('formSelectors'),
       width: _this.get('width'), // optional — default 350px
       formatting: _this.get('formatting'), // optional - default true
-      messages: _this.get('messages'),
+      placeholders: _this.get('placeholders'),
       values: _this.get('values'),
       // if true, will log helpful messages for setting up Card
       debug: _this.get('debug')
