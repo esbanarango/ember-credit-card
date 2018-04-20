@@ -43,14 +43,14 @@ describe('Unit: Component: credit-card', function() {
 
   });
 
-  it('accetps `values` option', function() {
+  it('accetps `placeholders` option', function() {
     // creates the component instance
     var component = this.subject(),
         card = null;
-    component.set('values',{number:'nuuuumber'});
+    component.set('placeholders',{ number:'nuuuumber' });
     this.render();
     card = component.get('card');
-    expect(card.options.values.number).to.equal('nuuuumber');
+    expect(card.options.placeholders.number).to.equal('nuuuumber');
 
   });
 });
