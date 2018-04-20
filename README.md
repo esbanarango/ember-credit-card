@@ -16,7 +16,7 @@ This is an Ember wrapper for the amazing [Card](https://github.com/jessepollak/c
 ````
 
 ##### Default
-By simply adding `{{credit-card}}` you will get the basic form.
+By simply adding `{{credit-card}}` a basic form will be generated:
 
 ````handlebars
 <div class='card-wrapper'></div>
@@ -30,12 +30,12 @@ By simply adding `{{credit-card}}` you will get the basic form.
 ````
 
 ##### Specifying settings
-You can also specify all the settings that [Card](https://github.com/jessepollak/card/blob/master/lib/js/card.js#L1136) supports.
+You can also specify all the settings that [Card](https://github.com/jessepollak/card/blob/master/src/coffee/card.coffee#L63) supports.
 
 ````handlebars
 {{  credit-card
   form='#my-form'
-  values=cardValues
+  placeholders=cardValues
   width=150
   formatting=false
 }}
