@@ -1,6 +1,6 @@
 # Ember Credit card
 
-![Download count all time](https://img.shields.io/npm/dt/ember-credit-card.svg) [![Build Status](https://travis-ci.org/esbanarango/ember-credit-card.svg)](https://travis-ci.org/esbanarango/ember-credit-card) [![npm version](https://badge.fury.io/js/ember-credit-card.svg)](http://badge.fury.io/js/ember-credit-card) [![Ember Observer Score](http://emberobserver.com/badges/ember-credit-card.svg)](http://emberobserver.com/addons/ember-credit-card)
+![Download count all time](https://img.shields.io/npm/dt/ember-credit-card.svg) [![Build Status](https://travis-ci.org/esbanarango/ember-credit-card.svg)](https://travis-ci.org/esbanarango/ember-credit-card) [![npm version](https://badge.fury.io/js/ember-credit-card.svg)](http://badge.fury.io/js/ember-credit-card) [![Ember Observer Score](http://emberobserver.com/badges/ember-credit-card.svg)](http://emberobserver.com/addons/ember-credit-card) [![Greenkeeper badge](https://badges.greenkeeper.io/esbanarango/ember-credit-card.svg)](https://greenkeeper.io/)
 
 This is an Ember wrapper for the amazing [Card](https://github.com/jessepollak/card) project.
 
