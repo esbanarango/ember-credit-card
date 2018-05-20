@@ -33,7 +33,7 @@ By simply adding `{{credit-card}}` a basic form will be generated:
 You can also specify all the settings that [Card](https://github.com/jessepollak/card/blob/master/src/coffee/card.coffee#L63) supports.
 
 ````handlebars
-{{  credit-card
+{{credit-card
   form='#my-form'
   placeholders=cardValues
   width=150
