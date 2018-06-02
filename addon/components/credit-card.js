@@ -76,6 +76,6 @@ export default Component.extend({
       // if true, will log helpful messages for setting up Card
       debug: _this.get('debug')
     });
-    this.set('card',card);
+    this.set('card', card);
   }
 });
