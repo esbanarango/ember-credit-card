@@ -24,7 +24,7 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "broccoli-funnel": "2.0.1",
+    "broccoli-funnel": "2.0.2",
     "broccoli-merge-trees": "2.0.0",
     "card": "^2.4.0",
     "ember-cli-babel": "^6.6.0",
