@@ -1,13 +1,13 @@
 {{#if showCard}}
-	<div class='card-wrapper'></div>
+	<div class="card-wrapper"></div>
 	<br/>
 {{/if}}
 {{#if hasBlock}}
   {{yield}}
 {{else}}
 	<form id="ember-credit-card-form">
-		{{input type="text" name="number" value=number placeholder='Credit Card Number'}}
-		{{input type="text" name="name" value=name placeholder='Name on Credit Card'}}
+		{{input type="text" name="number" value=number placeholder="Credit Card Number"}}
+		{{input type="text" name="name" value=name placeholder="Name on Credit Card"}}
 		{{input type="text" name="expiry" value=expiry}}
 		{{input type="text" name="cvc" value=cvc}}
 	</form>

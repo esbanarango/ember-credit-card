@@ -5,20 +5,22 @@
 This is an Ember wrapper for the amazing [Card](https://github.com/jessepollak/card) project.
 
 ## Installation
+
 `ember install ember-credit-card`
 
 ## Usage
 
 ![card](http://i.imgur.com/qG3TenO.gif)
 
-````handlebars
+```handlebars
 <CreditCard/>
-````
+```
 
 ##### Default
+
 By simply adding `{{credit-card}}` a basic form will be generated:
 
-````handlebars
+```handlebars
 <div class='card-wrapper'></div>
 <br/>
 <form id="ember-credit-card-form">
@@ -27,25 +29,28 @@ By simply adding `{{credit-card}}` a basic form will be generated:
   {{input type="text" name="expiry" value=expiry}}
   {{input type="text" name="cvc" value=cvc}}
 </form>
-````
+```
 
 ##### Specifying settings
+
 You can also specify all the settings that [Card](https://github.com/jessepollak/card/blob/master/src/coffee/card.coffee#L63) supports.
 
-````handlebars
+```handlebars
 <CreditCard
   @form="#my-form"
   @placeholders={{cardValues}}
   @width={{150}}
   @formatting={{false}}
 />
-````
+```
 
 ##### With template
+
 The default form and inputs used by default are so simple, so you can pass a template to use your own styled inputs.
+
 > Remeber to either use the default name inputs or specify them on the `{{credit-card}}` arguments
 
-````handlebars
+```handlebars
 <CreditCard @form="#my-form">
   <form id='my-form' class='payment-info'>
     <div class="ui input">
@@ -70,33 +75,30 @@ The default form and inputs used by default are so simple, so you can pass a tem
 
   </form>
 </CreditCard>
-````
+```
 
 ### Linting
 
-* `yarn lint:js`
-* `yarn lint:js --fix`
-
+- `yarn lint:js`
+- `yarn lint:js --fix`
 
 ## Running Tests
 
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
+- `ember test` – Runs the test suite on the current Ember version
+- `ember test --server` – Runs the test suite in "watch mode"
+- `ember try:each` – Runs the test suite against multiple Ember versions
 
 ### Running the dummy application
 
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+- `ember serve`
+- Visit the dummy application at [http://localhost:4200](http://localhost:4200).
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
-
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
 
 ## Support on Beerpay
+
 Hey dude! Help me out for a couple of :beers:!
 
-[![Beerpay](https://beerpay.io/esbanarango/ember-credit-card/badge.svg?style=beer-square)](https://beerpay.io/esbanarango/ember-credit-card)  [![Beerpay](https://beerpay.io/esbanarango/ember-credit-card/make-wish.svg?style=flat-square)](https://beerpay.io/esbanarango/ember-credit-card?focus=wish)
+[![Beerpay](https://beerpay.io/esbanarango/ember-credit-card/badge.svg?style=beer-square)](https://beerpay.io/esbanarango/ember-credit-card) [![Beerpay](https://beerpay.io/esbanarango/ember-credit-card/make-wish.svg?style=flat-square)](https://beerpay.io/esbanarango/ember-credit-card?focus=wish)
