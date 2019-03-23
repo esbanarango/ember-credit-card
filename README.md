@@ -12,7 +12,7 @@ This is an Ember wrapper for the amazing [Card](https://github.com/jessepollak/c
 ![card](http://i.imgur.com/qG3TenO.gif)
 
 ````handlebars
-{{credit-card}}
+<CreditCard/>
 ````
 
 ##### Default
@@ -33,12 +33,12 @@ By simply adding `{{credit-card}}` a basic form will be generated:
 You can also specify all the settings that [Card](https://github.com/jessepollak/card/blob/master/src/coffee/card.coffee#L63) supports.
 
 ````handlebars
-{{credit-card
-  form='#my-form'
-  placeholders=cardValues
-  width=150
-  formatting=false
-}}
+<CreditCard
+  @form="#my-form"
+  @placeholders={{cardValues}}
+  @width={{150}}
+  @formatting={{false}}
+/>
 ````
 
 ##### With template
@@ -46,7 +46,7 @@ The default form and inputs used by default are so simple, so you can pass a tem
 > Remeber to either use the default name inputs or specify them on the `{{credit-card}}` arguments
 
 ````handlebars
-{{#credit-card form="#my-form"}}
+<CreditCard @form="#my-form">
   <form id='my-form' class='payment-info'>
     <div class="ui input">
       <label>Credit Card Number:</label>
@@ -69,8 +69,7 @@ The default form and inputs used by default are so simple, so you can pass a tem
     </div>
 
   </form>
-{{/credit-card}}
-
+</CreditCard>
 ````
 
 ### Linting
