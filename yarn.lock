@@ -3989,10 +3989,10 @@ ember-mocha@^0.13.0:
     ember-cli-test-loader "^2.2.0"
     mocha "^2.5.3"
 
-ember-model-validator@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/ember-model-validator/-/ember-model-validator-3.6.0.tgz#a62c10ecd49f1f218a6f5f8fb83292e645fe5f99"
-  integrity sha512-kGSoL0ayR1nt1+M+bsHQ5qlbEG9kHyD451KL2OA1rhrK66V2FW4g0Jr4YZGeqqK+0BB+iwF0MHyQwNvVx1yWpA==
+ember-model-validator@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/ember-model-validator/-/ember-model-validator-3.7.0.tgz#90a04a044993139a517db704dd1d1e17bc6ed04d"
+  integrity sha512-O1L6VnjnhtK//GB8LZlJLuT+iBOPxTMB/1/7sWfydymhBl6Sz4nwrmIRCDIuOsl6x3W+D0Ae+xJwvj6ktnK3UQ==
   dependencies:
     ember-cli-babel "^7.6.0"
 
