@@ -6,7 +6,7 @@ const Funnel = require('broccoli-funnel');
 const MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-  name: 'ember-credit-card',
+  name: require('./package').name,
   included: function() {
     this._super.included.apply(this, arguments);
     this.import('vendor/card.js');
@@ -21,10 +21,10 @@ module.exports = {
 
     trees.push(
       new Funnel(path.join(this.project.root, 'node_modules', 'card', 'dist'), {
-        files: ['card.js'],
+        files: ['card.js']
       })
     );
 
     return new MergeTrees(trees);
-  },
+  }
 };
