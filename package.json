@@ -30,7 +30,7 @@
     "card": "^2.4.0",
     "ember-cli-babel": "^7.1.2",
     "ember-cli-htmlbars": "^3.0.0",
-    "ember-model-validator": "^3.7.0"
+    "ember-model-validator": "^3.8.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
