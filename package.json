@@ -29,7 +29,7 @@
     "broccoli-merge-trees": "2.0.0",
     "card": "^2.4.0",
     "ember-cli-babel": "^7.1.2",
-    "ember-cli-htmlbars": "^4.0.0",
+    "ember-cli-htmlbars": "^4.1.1",
     "ember-model-validator": "^3.7.0"
   },
   "devDependencies": {
