@@ -1,7 +1,6 @@
 /* eslint-env node */
 'use strict';
-
-const path = require('path');
+const resolvePkg = require('resolve-pkg');
 const Funnel = require('broccoli-funnel');
 const MergeTrees = require('broccoli-merge-trees');
 
@@ -20,7 +19,7 @@ module.exports = {
     }
 
     trees.push(
-      new Funnel(path.join(this.project.root, 'node_modules', 'card', 'dist'), {
+      new Funnel(resolvePkg('card/dist/'), {
         files: ['card.js']
       })
     );
