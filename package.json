@@ -54,7 +54,7 @@
     "ember-source-channel-url": "^2.0.0",
     "ember-try": "^1.0.0",
     "eslint-plugin-ember": "^5.2.0",
-    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-node": "^9.2.0",
     "loader.js": "^4.7.0",
     "qunit-dom": "^1.0.0",
     "resolve-pkg": "^2.0.0"
